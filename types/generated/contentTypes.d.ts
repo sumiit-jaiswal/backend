@@ -376,6 +376,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
   attributes: {
     title: Attribute.String;
     desc: Attribute.Blocks;
+    price: Attribute.Decimal;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

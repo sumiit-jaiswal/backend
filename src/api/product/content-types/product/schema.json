@@ -17,6 +17,9 @@
     },
     "desc": {
       "type": "blocks"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }
