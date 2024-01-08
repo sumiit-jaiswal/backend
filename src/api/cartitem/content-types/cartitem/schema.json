@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cartitems",
+  "info": {
+    "singularName": "cartitem",
+    "pluralName": "cartitems",
+    "displayName": "cartitem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quant": {
+      "type": "integer"
+    },
+    "prodid": {
+      "type": "biginteger"
+    },
+    "authuser": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::authuser.authuser",
+      "inversedBy": "cartitems"
+    }
+  }
+}

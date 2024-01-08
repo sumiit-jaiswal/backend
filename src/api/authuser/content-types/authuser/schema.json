@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authusers",
+  "info": {
+    "singularName": "authuser",
+    "pluralName": "authusers",
+    "displayName": "authuser"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtoken": {
+      "type": "text",
+      "unique": true
+    },
+    "cartitems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cartitem.cartitem",
+      "mappedBy": "authuser"
+    },
+    "orders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order.order",
+      "mappedBy": "authuser"
+    }
+  }
+}

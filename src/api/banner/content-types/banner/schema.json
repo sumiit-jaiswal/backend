@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "banners",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
-    "displayName": "product",
-    "description": ""
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "banner"
   },
   "options": {
     "draftAndPublish": true
@@ -14,9 +13,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "desc": {
-      "type": "blocks"
     },
     "price": {
       "type": "decimal"
@@ -29,13 +25,10 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "mappedBy": "products"
+    "productId": {
+      "type": "integer"
     }
   }
 }
